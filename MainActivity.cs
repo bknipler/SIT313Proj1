@@ -28,9 +28,19 @@ namespace SIT313Proj1
 
             cipherHistoryButton.Click += (sender, e) =>
             {
-                var intent = new Intent(this, typeof(cipherHistoryActivity));
+                var intent = new Intent(this, typeof(MessageHistory));
                 intent.PutStringArrayListExtra("messages", messages);
                 StartActivity(intent);
+            };
+
+            string decipheredMessage = string.Empty;
+
+            decipherButton.Click += (object sender, EventArgs e) =>
+            {
+                decipheredMessage = Core.Caesar.Decipher(cipherText.Text);
+
+                    // enable the Call History button
+                    cipherHistoryButton.Enabled = true;
             };
 
             //Create and Fill Spinner with Array in Strings.xml
@@ -40,7 +50,6 @@ namespace SIT313Proj1
 
             adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
             spinner.Adapter = adapter;
-
         }
 
         //Tell spinner how to behave when each option is selected
