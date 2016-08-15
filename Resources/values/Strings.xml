@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ApplicationName">Cipher Slayer</string>
+    <string name="spinner">Choose a Cipher</string>
+  <string name="cipherHistory">Cipher History</string>
+    <string-array name="cipher_array">
+      <item>Caesar</item>
+      <item>Transpostition(backwards)</item>
+      <item>Transpostition(pair switch)</item>
+      <item>Monoalphabetic Substitution</item>
+    </string-array>
+</resources>
