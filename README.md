@@ -1,2 +1,6 @@
 # SIT313Proj1
-First project for Deakin University unit SIT313 Mobile Computing. A simple android app that will attempt to decode cryptic messages using 4 different methods.
+First project for Deakin University unit SIT313 Mobile Computing. A simple android app that will attempt to decode cryptic messages using 4 different methods: Caesar - replace letter with next letter i.e A becomes B, B becomes C; Transpostition (backwards) - words read backwards i.e 'hello friend' becomes 'olleh dneirf'; Transpostition(pair switch) - switches every pair of letters i.e 'hello friend' becomes 'eh ll fo ei dn'; and Monoalphabetic Substitution - looks for the most commonly used letter int he message and assumes its 'E', which is the most commonly used letter in the english langauge, the second most commonly used letter is 'T'. This information can then be used to help form words and find out the other letters, but my program will only find the two most commonly used letters and assign their value as 'E' and 'T' respectivly.
+
+The project will have two screens: the main menu where the user can input a cryptic message, select the method of which to solve the message (will use a spinner) and then click a button to solve it, the solved message will then display instead of the original message and the user will get the chance to save the message. Clicking on the button to display saved massages takes the user to the second screen where the messages are.
+
+Project is called 'Cipher Slayer'.
